@@ -1,0 +1,60 @@
+GET http://localhost:3000/api/auth/users
+
+###
+
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "hhbb",
+  "password": "myPassword"
+}
+
+###
+
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+  "username": "hh",
+  "password": "myPassword"
+}
+
+###
+
+GET http://localhost:3000/api/cards
+
+###
+
+GET http://localhost:3000/api/cards/11
+
+###
+
+POST http://localhost:3000/api/cards
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.aGg.SLstk2DQbmYzu68QhyK3NkQ2Wz7FATgLYJVruPoaBv0
+
+{
+  "name": "cestca",
+  "status": "pStat....",
+  "content": "pContent....",
+  "category": "pCategory...."
+}
+
+### 
+
+PUT http://localhost:3000/api/cards/17
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.aGg.SLstk2DQbmYzu68QhyK3NkQ2Wz7FATgLYJVruPoaBv0
+
+{
+  "name": "zzzaa",
+  "status": "pStat",
+  "content": "pppContent..",
+  "category": "p3cat."
+}
+
+###
+
+DELETE http://localhost:3000/api/cards/15
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.aGg.SLstk2DQbmYzu68QhyK3NkQ2Wz7FATgLYJVruPoaBv0
